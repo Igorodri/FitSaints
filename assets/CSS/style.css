@@ -101,9 +101,50 @@ header {
     color: #4169E1;
 }
 
-@media only screen and (max-width: 768px) {
+
+@media only screen and (max-width: 320px) {
     header {
         width: 30px;
+        height: 150vh; 
+        overflow: hidden;
+        transition: 0.4s;
+    }
+
+    .area-img-logo{
+        display: none;
+        margin-bottom: -20px;
+    }
+
+    .lista{
+        display: none;
+    }
+
+    .item-lista{
+        margin-bottom: 10px;
+        margin-top: 30px;
+    }
+
+    header:hover{
+        width: 120px;
+        transition: 0.4s;
+    }
+
+    header:hover .area-img-logo{
+        display: block;
+    }
+
+    header:hover .lista{
+        display: block;
+    }
+}
+
+
+
+
+
+@media only screen and (min-width: 321px) and (max-width: 768px) {
+    header {
+        width: 40px;
         height: 150vh; 
         overflow: hidden;
         transition: 0.4s;
