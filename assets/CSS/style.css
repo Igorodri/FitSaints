@@ -37,6 +37,25 @@ main{
     width: 100%;
 }
 
+@media only screen and (max-width: 768px) {
+    section{
+        margin-left: 10px;
+    }
+
+    p{
+        font-size: 18px;
+        margin: 20px 50px;
+        text-align: center;
+    }
+}
+
+
+@media only screen and (min-width: 769px) and (max-width: 1440px) {
+    /*////*/
+}
+
+
+
 /* Header */
 header {
     position: fixed;
@@ -81,6 +100,43 @@ header {
     background-color: white;
     color: #4169E1;
 }
+
+@media only screen and (max-width: 768px) {
+    header {
+        width: 30px;
+        height: 150vh; 
+        overflow: hidden;
+        transition: 0.4s;
+    }
+
+    .area-img-logo{
+        display: none;
+        margin-bottom: 10px;
+    }
+
+    .lista{
+        display: none;
+    }
+
+    header:hover{
+        width: 120px;
+        transition: 0.4s;
+    }
+
+    header:hover .area-img-logo{
+        display: block;
+    }
+
+    header:hover .lista{
+        display: block;
+    }
+}
+
+
+@media only screen and (min-width: 769px) and (max-width: 1440px) {
+    /*////*/
+}
+
 
 /* Home */
 #home{
@@ -142,15 +198,78 @@ header {
     transform: scale(1.05,1.1);
 }
 
+
+
+@media only screen and (max-width: 768px) {
+
+    #section-home{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    
+    #section-home h2 {
+        color: #4169E1;
+        font-size: 70px;
+        margin-right: 80px;
+    }
+    
+    #section-home h3{
+        color: #4169E1;
+        margin: 20px 50px;
+    }
+    
+    #container-home {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+        margin-bottom: 0px;
+    }
+    
+    #container-imagem {
+        margin-right: -80px;
+    }
+    
+    #container-imagem img {
+        width: 250px;
+    }
+    
+    #planos2{
+        width: 200px;
+        padding: 10px;
+        border-radius: 10px;
+        border: 1px solid black;
+        color: white;
+        border: 1px solid #4169E1;
+        background-color: #4169E1;
+        font-weight: bold;
+        transition: 0.2s;
+        margin-bottom: 15px;
+        cursor: pointer;
+        margin-bottom: 30px;
+    }
+    
+    #planos2:hover{
+        transition: 0.2s;
+        transform: scale(1.05,1.1);
+    }
+    
+}
+
+
+@media only screen and (min-width: 769px) and (max-width: 1440px) {
+    /*///*/
+}
+
+
+
 /* Serviço */
 #section-servico{
     display: none;
     margin-top: 100px;
-}
-
-#section-servico span{
-    color: #4169E1;
-    font-weight: bold;
 }
 
 .area-box-servicos{
@@ -201,6 +320,38 @@ header {
     font-size: 16px;
 }
 
+
+@media only screen and (max-width: 768px) {
+    .box-servico{
+        width: 300px;
+        height: 300px;
+    }
+
+    .box-servico:hover{
+        transition: 0.2s;
+        height: 450px;
+        transform: scale(1.05,1.07) translateY(10px);
+    }
+
+    .area-box-servicos{
+        padding-bottom: 150px;
+    }
+
+
+    
+}
+
+
+
+
+@media only screen and (min-width: 769px) and (max-width: 1440px) {
+    #section-servico{
+        padding-bottom: 40px;
+    }
+}
+
+
+
 /* Equipamentos */
 #section-equipamentos{
     display: none;
@@ -241,12 +392,13 @@ header {
 }
 
 .content p{
-    font-size: 32px;
-    color: white;
+    font-size: 40px;
+    color: #4169E1;
+    font-weight: bold;
     font-size: bold;
     opacity: 0;
     transition: 0.4s;
-    font-family: "PT Sans", serif;
+    font-family:cursive
 }
 
 .box-equipamentos:hover .content p{
@@ -254,10 +406,74 @@ header {
     transition: 0.4s;
 }
 
+#apolete{
+    background-image: url("/assets/img/apolete.jpg");
+    background-size: cover;
+}
+
+#supino{
+    background-image: url("/assets/img/supino.jpeg");
+    background-size: cover;
+}
+
+#puxador{
+    background-image: url("/assets/img/puxador.jpg");
+    background-size: cover;
+}
+
+#polia{
+    background-image: url("/assets/img/polia.jpeg");
+    background-size: cover;
+}
+
+#esteira{
+    background-image: url("/assets/img/esteira.jpg");
+    background-size: cover;
+}
+
+#cross{
+    background-image: url("/assets/img/cross.jpg");
+    background-size: cover;
+}
+
+@media only screen and (max-width: 768px) {
+    .area-equipamentos{
+        display: grid;
+        grid-template-columns: repeat(1, 0fr);
+        grid-template-rows: repeat(2, 0fr);
+    }
+
+    .box-equipamentos{
+        width: 300px;
+        height: 300px;
+        
+    }
+}
+
+
+@media only screen and (min-width: 769px) and (max-width: 1440px) {
+    .area-equipamentos{
+        display: grid;
+        grid-template-columns: repeat(2, 0fr);
+        grid-template-rows: repeat(2, 0fr);
+    }
+
+    .box-equipamentos{
+        width: 350px;
+        height: 350px;
+    }
+}
+
+
 /* Planos */
 #section-planos{
     display: none;
     margin-top: 100px;
+}
+
+#font-section-planos{
+    color: #4169E1;
+    font-weight: bold;
 }
 
 .area-box-planos{
@@ -272,25 +488,39 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 700px; 
+    height: 710px; 
     width: 400px;
     border: 1px solid #ddd; 
     padding: 20px; 
     margin: 10px 20px;
     border-radius: 10px;
-    overflow-y: scroll;
 }
 
 #starter{
     background: linear-gradient(360deg, rgba(132,254,132,1) 7%, rgba(50,205,50,1) 70%);
 }
 
+#font-starter{
+    color: rgba(132,254,132,1);
+    font-weight: bold;
+}
+
 #intermediate{
     background: linear-gradient(300deg, rgba(255,172,157,1) 7%, rgba(255,82,51,1) 70%);
 }
 
+#font-intermediate{
+    color: rgba(255,82,51,1);
+    font-weight: bold;
+}
+
 #advanced{
     background: linear-gradient(320deg, rgba(67,78,122,1) 7%, rgba(31,75,255,1) 70%);
+}
+
+#font-advanced{
+    color: rgba(31,75,255,1);
+    font-weight: bold;
 }
 
 .title-plano{
@@ -330,7 +560,6 @@ header {
 }
 
 .preco{
-    font-size: 30px;
     color: white;
     height: 100%;
     margin-top: auto; 
@@ -338,8 +567,31 @@ header {
 
 .preco p{
     margin: 10px 0;
-    font-size: 30px;
+    font-size: 40px;
 }
+
+
+
+@media only screen and (max-width: 768px) {
+    .box-planos{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 800px; 
+        width: 330px;
+        border: 1px solid #ddd; 
+        padding: 20px; 
+        margin: 10px 20px;
+        border-radius: 10px;
+    }
+}
+
+
+@media only screen and (min-width: 769px) and (max-width: 1440px) {
+
+}
+
+
 
 /* Contatos */
 #section-contatos{
@@ -363,13 +615,58 @@ header {
 
 .box-contato{
     width: 400px;
-    padding: 20px;
+    padding: 10px;
     border: 1px solid #4169E1;
     border-radius: 10px;
-    transition: 0.2s;
+    transition: 0.4s;
+    font-size: 24px;
+    color: #4169E1;
 }
 
 .box-contato:hover{
-    transition: 0.2s;
+    transition: 0.4s;
     transform: scale(1.1,1.12);
+}
+
+
+#whatsapp:hover{
+    background-color: rgb(83, 195, 83);;
+    color: white;
+    border: transparent;
+}
+
+#instagram:hover{
+    background: linear-gradient(45deg, #F58529, #DD2A7B, #8134AF, #515BD4);
+    color: white;
+    border: transparent;
+}
+
+#email:hover{
+    background-color: rgb(87, 133, 225);
+    color: white;
+    border: transparent;
+}
+
+#location:hover{
+    background-color: rgb(228, 68, 68);
+    color: white;
+    border: transparent;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .box-contato{
+        width: 300px;
+    }
+
+    .box-contato:hover{
+        transition: 0.4s;
+        transform: scale(1.05,1.07);
+    }
+    
+}   
+
+
+@media only screen and (min-width: 769px) and (max-width: 1440px) {
+
 }
