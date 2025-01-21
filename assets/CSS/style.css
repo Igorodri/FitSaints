@@ -271,11 +271,12 @@ header {
     }
     
     #container-imagem {
-        margin-right: -80px;
+        margin-right: -60px;
     }
     
     #container-imagem img {
-        width: 250px;
+        margin-left: 35px;
+        width: 200px;
     }
     
     #planos2{
@@ -364,19 +365,24 @@ header {
 
 @media only screen and (max-width: 768px) {
     .box-servico{
-        width: 300px;
-        height: 300px;
+        width: 250px;
+        height: 250px;
     }
 
     .box-servico:hover{
         transition: 0.2s;
-        height: 450px;
-        transform: scale(1.05,1.07) translateY(10px);
+        height: 500px;
+        transform: scale(1.04,1.06) translateY(20px);
     }
 
     .area-box-servicos{
         padding-bottom: 150px;
     }
+
+    .img-box-servico h3{
+        margin-top: 10px;
+    }
+    
 
 
     
@@ -485,8 +491,8 @@ header {
     }
 
     .box-equipamentos{
-        width: 300px;
-        height: 300px;
+        width: 250px;
+        height: 250px;
         
     }
 }
@@ -618,8 +624,8 @@ header {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        height: 800px; 
-        width: 330px;
+        height: 100%; 
+        width: 280px;
         border: 1px solid #ddd; 
         padding: 20px; 
         margin: 10px 20px;
@@ -697,7 +703,7 @@ header {
 
 @media only screen and (max-width: 768px) {
     .box-contato{
-        width: 300px;
+        width: 250px;
     }
 
     .box-contato:hover{
