@@ -6,7 +6,7 @@ sections.forEach(section => {
         sections.forEach(sec => {
             const button = document.getElementById(sec);
             button.style.backgroundColor = sec === section ? 'white' : 'black';
-            button.style.color = sec === section ? '#4169E1' : 'white';
+            button.style.color = sec === section ? 'brown' : 'white';
             
             document.getElementById(`section-${sec}`).style.display = sec === section 
                 ? (section === "home" ? "flex" : "block") 
@@ -22,7 +22,7 @@ btn_planos.addEventListener("click", function(){
     const btn_planos_section = document.getElementById("planos")
 
     btn_planos_section.style.backgroundColor = 'white'
-    btn_planos_section.style.color = '#4169E1'
+    btn_planos_section.style.color = 'brown'
 
     document.getElementById("section-home").style.display = 'none'
 
