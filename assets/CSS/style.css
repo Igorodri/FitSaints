@@ -175,7 +175,19 @@ header {
 
 
 @media only screen and (min-width: 769px) and (max-width: 1440px) {
-    /*////*/
+    .area-img-logo{
+        display: none;
+        margin-bottom: -20px;
+    }
+
+    .lista{
+        display: none;
+    }
+
+    .item-lista{
+        margin-bottom: 10px;
+        margin-top: 30px;
+    }
 }
 
 
@@ -382,18 +394,28 @@ header {
     .img-box-servico h3{
         margin-top: 10px;
     }
-    
-
-
-    
+     
 }
 
 
 
 
 @media only screen and (min-width: 769px) and (max-width: 1440px) {
+
+    .box-servico{
+        background-color: white;
+        border: 1px solid #4169E1;
+        width: 300px;
+        height: 300px;
+        margin: 60px 15px;
+        border-radius: 10px;
+        transition: 0.5s;
+    }
+    
+
+
     #section-servico{
-        padding-bottom: 40px;
+        padding-bottom: 120px;
     }
 }
 
