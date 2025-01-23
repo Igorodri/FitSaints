@@ -32,19 +32,33 @@ p{
 section{
     text-align: center;
     margin-left: 120px;
+    overflow-x: hidden;
 }
 
 main{
     width: 100%;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 320px){
     section{
         margin-left: 10px;
     }
 
     p{
         font-size: 16px;
+        margin: 20px 50px;
+        text-align: center;
+    }
+}
+
+
+@media only screen and (min-width: 321px) and (max-width: 768px) {
+    section{
+        margin-left: 10px;
+    }
+
+    p{
+        font-size: 14px;
         margin: 20px 50px;
         text-align: center;
     }
@@ -114,7 +128,8 @@ header {
 
     .area-img-logo{
         display: none;
-        margin-bottom: -20px;
+        margin-top: -30px;
+        margin-bottom: -10px;
     }
 
     .lista{
@@ -123,7 +138,8 @@ header {
 
     .item-lista{
         margin-bottom: 10px;
-        margin-top: 30px;
+        margin-top: 20px;
+        font-size: 25px;
     }
 
     header:hover{
@@ -154,13 +170,25 @@ header {
 
     .area-img-logo{
         display: none;
-        margin-bottom: 10px;
+        margin-bottom: 0px;
     }
 
-    .lista{
+    .lista {
+        list-style: none;
+        margin-top: -30px;
         display: none;
     }
-
+    
+    .item-lista {
+        font-size: 30px;
+        color: white;
+        background-color: black;
+        padding: 4px;
+        border-radius: 10px;
+        margin-top: 30px;
+        transition: 0.2s;
+        cursor: pointer;
+    }
     header:hover{
         width: 120px;
         transition: 0.4s;
@@ -260,8 +288,66 @@ header {
 }
 
 
+@media only screen and (max-width: 320px){
+    #section-home{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    
+    #section-home h2 {
+        color: brown;
+        font-size: 50px;
+        margin-right: 80px;
+    }
+    
+    #section-home h3{
+        color: brown;
+        margin: 20px 50px;
+    }
+    
+    #container-home {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+        margin-bottom: 0px;
+    }
+    
+    #container-imagem {
+        margin-right: -45px;
+    }
+    
+    #container-imagem img {
+        margin-left: 35px;
+        width: 150px;
+    }
+    
+    #planos2{
+        width: 200px;
+        padding: 10px;
+        border-radius: 10px;
+        border: 1px solid black;
+        color: white;
+        border: 1px solid brown;
+        background-color: brown;
+        font-weight: bold;
+        transition: 0.2s;
+        margin-bottom: 15px;
+        cursor: pointer;
+        margin-bottom: 30px;
+    }
+    
+    #planos2:hover{
+        transition: 0.2s;
+        transform: scale(1.05,1.1);
+    }
+}
 
-@media only screen and (max-width: 768px) {
+
+@media only screen and (min-width: 321px) and (max-width: 768px) {
 
     #section-home{
         display: flex;
@@ -401,6 +487,7 @@ header {
 
     .area-box-servicos{
         padding-bottom: 150px;
+        margin-left: 5px;
     }
 
     .img-box-servico h3{
@@ -664,6 +751,16 @@ header {
         margin: 10px 20px;
         border-radius: 10px;
     }
+
+    .area-box-planos{
+        margin-top: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-left: 15px;
+        padding-bottom: 25px;
+    }
 }
 
 
@@ -735,6 +832,11 @@ header {
 
 
 @media only screen and (max-width: 768px) {
+    #section-contatos{
+        display: none;
+        margin-top: 15%;
+    }
+
     .box-contato{
         width: 250px;
     }
@@ -742,6 +844,13 @@ header {
     .box-contato:hover{
         transition: 0.4s;
         transform: scale(1.05,1.07);
+    }
+
+    .area-contato{
+        display: grid;
+        grid-template-columns: repeat(1, 0fr);
+        grid-template-rows: repeat(2, 0fr);
+        gap: 10px;
     }
     
 }   
