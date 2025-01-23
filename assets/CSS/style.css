@@ -477,11 +477,12 @@ header {
     .box-servico{
         width: 250px;
         height: 250px;
+        transition: 0.5s;
     }
 
     .box-servico:hover{
-        transition: 0.2s;
-        height: 500px;
+        transition: 0.5s;
+        height: 100%;
         transform: scale(1.04,1.06) translateY(20px);
     }
 
@@ -505,16 +506,22 @@ header {
         background-color: white;
         border: 1px solid brown;
         width: 300px;
-        height: 300px;
+        height: 320px;
         margin: 60px 15px;
         border-radius: 10px;
         transition: 0.5s;
     }
     
+    
+    .box-servico:hover{
+        transition: 0.2s;
+        height: 430px;
+        transform: scale(1.04,1.06) translateY(20px);
+    }
 
 
     #section-servico{
-        padding-bottom: 120px;
+        height: 120vh;
     }
 }
 
